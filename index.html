@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Stories</title>
+    <!-- Collegamento a favicon -->
+    <link rel="icon" href="assets/icon.png">
+    <!-- Collegamento a foglio di stile -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CDN ICON -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/icon_light.png" alt="icona">
+            <h1>TELL ME A STORY</h1>
+        </header>
+
+        <!-- contenuto -->
+        <main class="building">
+            <!-- Schermata di preparazione -->
+            <div class="building-screen">
+                <div class="field">
+                    <label>Nome del protagonista</label>
+                    <input type="text">
+                </div>
+
+                <!-- campo emoji -->
+                <div class="field">
+                    <label>Scegli 3 emoji</label>
+                    <ul class="emoji-list">
+                        <li class="emoji">👹</li>
+                        <li class="emoji">👽</li>
+                        <li class="emoji">🧚</li>
+                        <li class="emoji">🧟</li>
+                        <li class="emoji">🌴</li>
+                        <li class="emoji">🌍</li>
+                        <li class="emoji">🐥</li>
+                        <li class="emoji">🧢</li>
+                    </ul>
+                </div>
+                <button id="generate">GENERA</button>
+            </div>
+
+            <!-- Schermata di loading -->
+            <div class="loading-screen">
+                <img src="assets/loader.gif" alt="loader">
+            </div>
+
+            <!-- Schermata di risultato -->
+            <div class="result-screen">
+                <div class="story">
+                    <h2 class="story-title">Titolo</h2>
+                    <p class="story-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nulla modi
+                        recusandae corporis molestiae, doloribus ipsum ex minima possimus assumenda reprehenderit
+                        voluptatem aspernatur dolores explicabo corrupti deserunt asperiores sed aliquid!</p>
+                    <div class="result-buttons">
+                        <button id="home" class="secondary-button">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </button>
+                        <button id="continue">AVANTI</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+<!-- JS -->
+<script src="script.js"></script>
+
+</html>
